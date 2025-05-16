@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import { assets} from "@/assets/assets";
+import { assets } from "@/assets/assets";
 import Link from "next/link"
 import { useAppContext } from "@/context/AppContext";
 import Image from "next/image";
@@ -17,6 +17,10 @@ const Navbar = () => {
         src={assets.logo}
         alt="logo"
       />
+      <Image src="/facebook.png" alt="facebook" width={24} height={24} />
+      <Image src="/instagram.png" alt="instagram" width={24} height={24} />
+      <Image src="/tiktok.png" alt="tiktok" width={24} height={24} />
+      <Image src="/youtube.png" alt="youtube" width={24} height={24} />
       <div className="flex items-center gap-4 lg:gap-8 max-md:hidden">
         <Link href="/" className="hover:text-gray-900 transition">
           Home
