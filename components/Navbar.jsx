@@ -14,13 +14,10 @@ const Navbar = () => {
       <Image
         className="cursor-pointer w-28 md:w-32"
         onClick={() => router.push('/')}
-        src={assets.logo}
+        src={assets.Logo}
         alt="logo"
       />
-      <Image src="/facebook.png" alt="facebook" width={24} height={24} />
-      <Image src="/instagram.png" alt="instagram" width={24} height={24} />
-      <Image src="/tiktok.png" alt="tiktok" width={24} height={24} />
-      <Image src="/youtube.png" alt="youtube" width={24} height={24} />
+
       <div className="flex items-center gap-4 lg:gap-8 max-md:hidden">
         <Link href="/" className="hover:text-gray-900 transition">
           Home
@@ -35,7 +32,7 @@ const Navbar = () => {
           Contact
         </Link>
 
-        {isSeller && <button onClick={() => router.push('/seller')} className="text-xs border px-4 py-1.5 rounded-full">Seller Dashboard</button>}
+        <button onClick={() => router.push('/seller')} className="text-xs border px-4 py-1.5 rounded-full">Seller Dashboard</button>
 
       </div>
 
